@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm install --prefix client && npm run build --prefix client",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,7 +39,6 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
-    "@babel/preset-react": "^7.12.7",
-    "babel-loader": "^8.2.2"
+    "@babel/preset-react": "^7.12.7"
   }
 }
